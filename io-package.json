@@ -48,7 +48,7 @@
 		],
 		"license": "MIT",
 		"platform": "Javascript/Node.js",
-		"icon": "hubitat.png",
+		"icon": "hubitat-logo.png",
 		"enabled": true,
 		"extIcon": "https://raw.githubusercontent.com/GledholtHall/ioBroker.hubitat/master/admin/hubitat.png",
 		"readme": "https://github.com/GledholtHall/ioBroker.hubitat/blob/master/README.md",

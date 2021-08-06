@@ -31,7 +31,7 @@
 		},
 		{
 			"key": "port",
-			"label": "Maker API port",
+			"label": "Maker API AppID",
 			"inputType": "text",
 			"defaultValue": "42"
 		},

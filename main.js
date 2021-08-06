@@ -104,7 +104,7 @@ async function main() {
 	adapter.log.info("config appID: " + adapter.config.port);
 	adapter.log.info("config token: " + adapter.config.token);
 	
-	await this.setStateAsync("info.connection", true, true);   //KH
+	//await this.setStateAsync("info.connection", true, true);   //KH
 
 	/*
 		For every state in the system there has to be also an object of type state

@@ -1,0 +1,58 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "hubitat",
+	"title": "Hubitat Elevation",
+	"description": "Adapter to link to Hubitat Elevation Devices",
+	"keywords": [
+		"Hubitat Elevation iobroker"
+	],
+	"contributors": [
+		"Kevin Hawkins"
+	],
+	"authorName": "xAP Automation",
+	"authorGithub": "GledholtHall",
+	"authorEmail": "iobrokerDev@ukusa.co.uk",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "iot-systems",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "hub",
+			"label": "Hubitat Elevation IP",
+			"inputType": "text",
+			"defaultValue": "127.0.0.0"
+		},
+		{
+			"key": "port",
+			"label": "Maker API port",
+			"inputType": "text",
+			"defaultValue": "42"
+		},
+		{
+			"key": "token",
+			"label": "Maker API token",
+			"inputType": "text",
+			"defaultValue": ""
+		}
+	],
+	"language": "JavaScript",
+	"adminReact": "no",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "no",
+	"tools": [
+		"type checking"
+	],
+	"gitRemoteProtocol": "HTTPS",
+	"license": "MIT License",
+	"ci": "gh-actions",
+	"dependabot": "yes",
+	"creatorVersion": "1.33.0"
+}

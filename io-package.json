@@ -1,0 +1,97 @@
+{
+	"common": {
+		"name": "hubitat",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "Hubitat Elevation",
+			"de": "Hubitat-Höhe",
+			"ru": "Hubitat Elevation",
+			"pt": "Elevação do Hubitat",
+			"nl": "Hubitat-hoogte",
+			"fr": "Élévation de l'Hubitat",
+			"it": "Elevazione Hubitat",
+			"es": "Elevación Hubitat",
+			"pl": "Elewacja Hubitatu",
+			"zh-cn": "哈比塔海拔"
+		},
+		"desc": {
+			"en": "Adapter to link to Hubitat Elevation Devices",
+			"de": "Adapter zur Verbindung mit Hubitat-Hebegeräten",
+			"ru": "Адаптер для подключения к Hubitat Elevation Devices",
+			"pt": "Adaptador para vincular aos dispositivos de elevação Hubitat",
+			"nl": "Adapter om te koppelen aan Hubitat Elevation Devices",
+			"fr": "Adaptateur à relier aux appareils d'élévation Hubitat",
+			"it": "Adattatore per il collegamento ai dispositivi di elevazione Hubitat",
+			"es": "Adaptador para vincular a los dispositivos de elevación Hubitat",
+			"pl": "Adapter do połączenia z urządzeniami wysokościowymi Hubitat",
+			"zh-cn": "连接到 Hubitat 高程设备的适配器"
+		},
+		"authors": [
+			"xAP Automation <iobrokerDev@ukusa.co.uk>"
+		],
+		"keywords": [
+			"Hubitat Elevation iobroker"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"icon": "hubitat.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/GledholtHall/ioBroker.hubitat/master/admin/hubitat.png",
+		"readme": "https://github.com/GledholtHall/ioBroker.hubitat/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "iot-systems",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"hub": "127.0.0.0",
+		"port": "42",
+		"token": ""
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

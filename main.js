@@ -11,7 +11,7 @@ const utils = require("@iobroker/adapter-core");
 // Load your modules here, e.g.:
 // const fs = require("fs");
 //const utils = require(__dirname + '/lib/utils');
-const HASS = require (__dirname + 'lib/hubitat');
+const HASS = require (__dirname + '/lib/hubitat');
 
 /**
  * The adapter instance

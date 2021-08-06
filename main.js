@@ -10,12 +10,18 @@ const utils = require("@iobroker/adapter-core");
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
+//const utils = require(__dirname + '/lib/utils');
+const HASS = require (__dirname + 'lib/hubitat');
 
 /**
  * The adapter instance
  * @type {ioBroker.Adapter}
  */
 let adapter;
+
+var connected = false;
+var hubitat;
+var hubitatObjects={};
 
 /**
  * Starts the adapter instance
@@ -95,8 +101,10 @@ async function main() {
 	// The adapters config (in the instance object everything under the attribute "native") is accessible via
 	// adapter.config:
 	adapter.log.info("config hub: " + adapter.config.hub);
-	adapter.log.info("config port: " + adapter.config.port);
+	adapter.log.info("config appID: " + adapter.config.port);
 	adapter.log.info("config token: " + adapter.config.token);
+	
+	await this.setStateAsync("info.connection", true, true);   //KH
 
 	/*
 		For every state in the system there has to be also an object of type state

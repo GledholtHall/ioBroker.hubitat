@@ -21,7 +21,7 @@
     "url": "https://github.com/GledholtHall/ioBroker.hubitat"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.5.1"
+    "@iobroker/adapter-core": "^2.6.6"
   },
   "devDependencies": {
     "@iobroker/testing": "^2.4.4",
